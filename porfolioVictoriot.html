@@ -1,0 +1,756 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RANDRIANARISOLO Tokiniaina Victoriot - Ingénieur R&D Energie</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px;
+  }
+</style>
+</head>
+
+<!-- Modal Projet 1 -->
+<div class="modal fade" id="project1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content p-4">
+
+      <h4>Description</h4>
+      <p>Modélisation du réseau IEEE avec PandaPower pour l'analyse et la prédiction de charge.</p>
+
+      <h5>Objectif</h5>
+      <p>Optimiser l'écoulement de puissance en prédisant la charge via un modèle LSTM.</p>
+
+      <h5>Technologies</h5>
+      <div class="mb-3">
+        <span class="badge bg-primary">Python</span>
+        <span class="badge bg-primary">PandaPower</span>
+        <span class="badge bg-primary">TensorFlow</span>
+      </div>
+
+      <h5 class="mt-3">Compétences développées</h5>
+      <ul>
+        <li>Modélisation réseau</li>
+        <li>Deep Learning</li>
+        <li>Optimisation énergétique</li>
+        <li>Analyse de séries temporelles</li>
+      </ul>
+
+      <h5>Méthodologie</h5>
+      <div class="row g-4">
+        <p> Les Résultats de prédiction LSTM nourissent directement le modèle de l’optimisation de lécoulement de puissance, permettant une planification plus précise et efficace du réseau électrique.</p>
+        <!-- Point 1 : Autocorrélation -->
+        <div class="col-md-6 col-lg-4 text-center">
+          <img src="images/LSTM2.png" alt="Autocorrélation" class="mb-2" style="height:80px; object-fit:contain;">
+          <h6>Analyse d'autocorrélation</h6>
+          <p>Détermination de l'horizon de prédiction approprié à partir des séries temporelles.</p>
+        </div>
+
+        <!-- Point 2 : Nettoyage -->
+        <div class="col-md-6 col-lg-4 text-center">
+          <img src="images/LSTM3.png" alt="Nettoyage données" class="mb-2" style="height:80px; object-fit:contain;">
+          <h6>Nettoyage des données</h6>
+          <p>Élimination des valeurs aberrantes et filtrage par seuillage pour préparer les données.</p>
+        </div>
+
+        <!-- Point 3 : Optimisation Bayésienne -->
+        <div class="col-md-6 col-lg-4 text-center">
+          <img src="images/LSTM4.png" alt="Optimisation Bayésienne" class="mb-2" style="height:80px; object-fit:contain;">
+          <h6>Optimisation des hyperparamètres</h6>
+          <p>Utilisation de la méthode bayésienne pour trouver les meilleurs paramètres du modèle LSTM.</p>
+        </div>
+
+        <!-- Point 4 : Bus IEEE Simbench -->
+        <div class="col-md-6 col-lg-4 text-center">
+          <img src="images/LSTM5.jpg" alt="Bus IEEE" class="mb-2" style="height:80px; object-fit:contain;">
+          <h6>Bus IEEE et données Simbench</h6>
+          <p>Simulation des charges et flux de puissance à l’aide d’un bus IEEE test avec données simulés de Simbench.</p>
+        </div>
+
+        <!-- Point 5 : Comparaison modèles -->
+        <div class="col-md-6 col-lg-4 text-center">
+          <img src="images/LSTM6.jpg" alt="Comparaison modèles" class="mb-2" style="height:80px; object-fit:contain;">
+          <h6>Comparaison LSTM vs modèle naïf</h6>
+          <p>Évaluation des performances prédictives et validation du modèle développé.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Modal Projet 2 -->
+<div class="modal fade" id="project2">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content p-4">
+
+      <h4>Description</h4>
+      <p>Mini Rover capable de suivre les humains, détecter les feux de circulation et aussi les marqueurs ArUco. Le projet intègre la mise en place du circuit électronique, la gestion de la communication entre l'ESP32 et les commandes renvoyées par l'ordinateur, ainsi que l'ajout d'une interface graphique pour contrôler le rover et visualiser son environnement.</p>
+
+      <h5>Objectif</h5>
+      <p>Développer un robot mobile avec ESP32-CAM capable d’être commandé via ordinateur, exploitant sa puissance de calcul pour le traitement des images et la prise de décision.</p>
+      <p> Yolo sera utiliser pour la detection de visage et feux rouge tandis que les marqueurs Aruco souvent utilisé en robotique permettent une intéraction en plus de ce robot
+      <h5>Technologies</h5>
+      <div class="mb-3">
+        <span class="badge bg-primary">Python</span>
+        <span class="badge bg-primary">C++</span>
+        <span class="badge bg-primary">Réseau</span>
+        <span class="badge bg-primary">YOLO v8</span>
+        <span class="badge bg-primary">ArUco</span>
+      </div>
+
+      <h5 class="mt-3">Compétences développées</h5>
+      <ul>
+        <li>Modélisation et gestion réseau</li>
+        <li>Deep Learning appliqué à la vision</li>
+        <li>Contrôle et pilotage d’un robot mobile</li>
+      </ul>
+
+      <!-- Section Méthodologie -->
+      <h5>Méthodologie</h5>
+      <div class="text-center">
+        <img src="images/Tokamaso2.jpg" alt="Méthodologie Rover" class="mb-3" style="height:300px; object-fit:contain;">
+        <p>
+          Le microcontrôleur ESP32-CAM récupère les images et contrôle les actionneurs du rover.
+          Le robot peut être commandé via une interface web de base. Nous avons développé un GUI sur ordinateur connecté au même réseau pour piloter le rover, traiter les images via YOLO et autres prétraitements, puis renvoyer les instructions de contrôle au rover via HTTP.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Modal Projet 3 -->
+<div class="modal fade" id="project3">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content p-4">
+
+      <h4>Description</h4>
+      <p>
+        HAITAO (Highly Advanced Intelligent Task Assistant Operations) est un bras robotique SCARA capable d’être commandé via une application, des gestes de la main et pouvant reconnaître des marqueurs et des objets.
+        Ce projet combine programmation, vision par ordinateur, électronique, mécanique et impression 3D. Bien que les robots SCARA soient peu répandus dans la communauté des makers, ils sont très utilisés dans le milieu industriel.
+      </p>
+
+      <h5>Objectif</h5>
+      <p>
+        Concevoir un robot SCARA entièrement fonctionnel, utilisable par un utilisateur sans compétences en programmation. Le robot peut être piloté via :
+        <ul>
+          <li>Une application Python permettant à l’utilisateur de définir une configuration et d’obtenir la position correspondante, ou d’effectuer le processus inverse.</li>
+          <li>Une modélisation cinématique directe et inverse du mouvement du “End Effector” pour simplifier les calculs de position.</li>
+          <li>La conception 3D des pièces mécaniques et de la structure du robot afin de réaliser l’assemblage physique.</li>
+          <li>La reconnaissance de marqueurs ArUco pour adapter le placement des objets dans des environnements industriels variables.</li>
+        </ul>
+      </p>
+
+      <h5>Technologies</h5>
+      <div class="mb-3">
+        <span class="badge bg-primary">Python</span>
+        <span class="badge bg-primary">Arduino Uno</span>
+        <span class="badge bg-primary">C++</span>
+        <span class="badge bg-primary">Vision par ordinateur</span>
+        <span class="badge bg-primary">SolidWorks</span>
+        <span class="badge bg-primary">Impression 3D</span>
+      </div>
+
+      <h5 class="mt-3">Compétences développées</h5>
+      <ul>
+        <li>Programmation et modélisation géométrique</li>
+        <li>Vision par ordinateur et détection de marqueurs</li>
+        <li>Commande gestuelle et interface utilisateur</li>
+        <li>Intégration électronique et mécanique d’un bras SCARA</li>
+      </ul>
+
+      <h5>Méthodologie</h5>
+      <div class="text-center">
+        <img src="images/Haitao2.jpg" alt="Méthodologie HAITAO" class="mb-3" style="height:200px; object-fit:contain;">
+        <p>
+          L’application Python calcule les positions et commande le robot, tandis que les gestes de la main sont captés par la webcam.
+          Le robot est piloté par un Arduino Uno équipé de deux moteurs pas-à-pas pour les axes et d’un servo-moteur avec électroaimant pour saisir ou relâcher des objets métalliques.
+          L’utilisateur peut enregistrer des positions, exécuter des mouvements pick & place, et visualiser l’état du robot ainsi que la détection des marqueurs dans son espace de travail.
+        </p>
+      </div>
+
+      <h5>Illustrations</h5>
+      <div class="row g-3">
+        <div class="col-md-4 text-center">
+          <img src="images/HAITAO_GUI.JPG" alt="Application HAITAO" class="img-fluid mb-2">
+          <p>Application Python pour commander le robot et visualiser son état</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="images/HAITAO_3D.JPG" alt="Modélisation 3D du robot" class="img-fluid mb-2">
+          <p>Modélisation 3D du robot SCARA imprimé</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="images/HAITAO_Aruco.JPG" alt="Marqueurs de l'espace de travail" class="img-fluid mb-2">
+          <p>Marqueurs ArUco limitant l’espace de travail et détectés par la caméra</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Tokiniaina Victoriot</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="bg-light text-center p-5">
+  <div class="container">
+    <h1 class="display-4">Ingénieur R&D Energie </h1>
+    <p class="lead">Micro-réseaux DC | Optimisation énergétique | Réseaux Electrique</p>
+  </div>
+</section>
+<!-- Hero Section -->
+<section class="bg-light text-center p-5">
+  <div class="container">
+
+    <!-- Photo -->
+    <img src="images/PDP.jpg"
+         alt="Tokiniaina Victoriot"
+         class="rounded-circle mb-3"
+         style="width:150px; height:150px; object-fit:cover; border:3px solid #0d6efd;">
+
+    <h1 class="lead">RANDRIANARISOLO Tokiniaina Victoriot</h1>
+    </div>
+</section>
+
+<!-- About -->
+<section class="p-5">
+  <div class="container">
+    <h2>À propos</h2>
+    <p>
+      Ingénieur en Génie Électrique spécialisé dans les systèmes énergétiques, je m’intéresse particulièrement à l’optimisation énergétique, à l’intelligence artificielle appliquée à l’énergie, ainsi qu’à l’électronique et à la robotique.
+ j'ai alors les compétences pour développer des solutions innovantes intégrant les énergies renouvelables, les architectures en courant continu et des systèmes intelligents de gestion de l’énergie. 
+Je vous invite à découvrir ma vitrine numérique.
+
+    </p>
+  </div>
+</section>
+
+
+
+
+<!-- Formation - Carousel -->
+<section class="bg-light p-5">
+  <div class="container">
+    <h2 class="mb-4 text-center"><span id='carousel-counter-formation'>Formation - / 3</span></h2>
+
+    <div id="formationCarousel" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-inner">
+
+        <!-- MSc -->
+        <div class="carousel-item active">
+  <div class="card shadow p-2">
+    <div class="row align-items-center">
+      <div class="col-2 col-md-2 text-center">
+        <img src="images/UR.jpg"
+             alt="Logo Université de La Réunion"
+             class="img-fluid rounded">
+      </div>
+      <!-- Colonne texte principale (4/5) -->
+      <div class="col-10 col-md-10">
+        <h4>MSc Energy – Université de La Réunion - 2025</h4>
+        <p>RNCP : 38689</p>
+        <p>Programme ayant contribué au renforcement de mes compétences en analyse de données, en apprentissage automatique, en SIG et en réseaux de capteurs.
+        Cette formation a pu renforcer mes compétences en Analyses énergetiques et les traitements spatio-temporelles. Donnant aussi une approche nouvelle sur l'impact du changement climatique.
+        </p>
+        <p><strong>Lauréat Bourse d'excellence Horizon</strong></p>
+        <p><strong>Stage recherche :</strong> Optimisation climatisation par micro-réseaux DC.</p>
+        <div class="mb-3">
+          <span class="badge bg-primary">Scipy</span>
+          <span class="badge bg-primary">Pandas</span>
+          <span class="badge bg-primary">netCDF4</span>
+          <span class="badge bg-primary">Xarray</span>
+          <span class="badge bg-primary">IOS-net</span>
+          <span class="badge bg-primary">Qgis</span>
+          <span class="badge bg-primary">TCP/IP</span>
+          <span class="badge bg-primary">SSH</span>
+          <span class="badge bg-primary">Lora</span>
+        </div>
+      </div>
+
+      <!-- Colonne logo (1/5) -->
+
+
+    </div>
+  </div>
+</div>
+
+        <!-- Ingénieur -->
+        <div class="carousel-item">
+          <div class="card shadow p-2">
+            <div class="row align-items-center">
+              <div class="col-2 col-md-2 text-center">
+                <img src="images/ESPA.jpg"
+                     alt="Logo ESPA Antananarivo"
+                     class="img-fluid rounded">
+              </div>
+              <!-- Colonne texte principale (4/5) -->
+              <div class="col-10 col-md-10">
+            <h4>MEng Electrical Engineer – ESPA Antananarivo - 2024</h4>
+            <p> Axé sur les systèmes électriques et les énergies renouvelables. Le programme couvre l’analyse et la simulation des réseaux électriques, le dimensionnement et la modélisation de systèmes photovoltaïques, ainsi que l’électronique de puissance (redresseurs, hacheurs, convertisseurs Boost/Buck). Le cursus inclut également la programmation avec Python et Java ainsi que l'utilisation de Matlab Simulink. Autre que cela des compétences sur les capteurs, l'électronique et l'automatisation permettent d'avoir une polyvalence de mon profil dans le cadre de cette formation.
+            <p><strong>Mémoire :</strong> OPTIMISATION DE L’ECOULEMENT DE PUISSANCE DANS UN RESEAU ELECTRIQUE A L’AIDE DE PREDICTION DE CHARGES EN UTILISANT UN RESEAU DE NEURONE LSTM .</p>
+            <div class="mb-3">
+            <span class="badge bg-primary">Matlab</span>
+            <span class="badge bg-primary">PV-syst</span>
+            <span class="badge bg-primary">Tia Portal</span>
+            <span class="badge bg-primary">Keras / Tensorflow</span>
+            <span class="badge bg-primary">Solidworks</span>
+            <span class="badge bg-primary">Proteus</span>
+            </div>
+          </div>
+
+        </div>
+        </div>
+        </div>
+
+        <!-- Licence -->
+        <div class="carousel-item">
+          <div class="card shadow p-2">
+            <div class="row align-items-center">
+              <div class="col-2 col-md-2 text-center">
+              <img src="images/ESPA.jpg"
+                   alt="Logo ESPA Antananarivo"
+                   class="img-fluid rounded">
+</div>
+            <div class="col-10 col-md-10 ">
+            <h4>Licence Génie Électrique – ESPA Antananarivo - 2022</h4>
+            <p>- Mathématique et Physique pour l'ingénieur - Moteur Electrique - Circuit Electronique - Electrotechnique.</p>
+          </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#formationCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#formationCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Expérience professionnelle -->
+<section class="p-5">
+  <div class="container">
+    <h2 class="mb-5">Expériences Professionnelles</h2>
+
+    <!-- Experience 1 -->
+    <div class="d-flex align-items-start mb-4">
+      <img src="images/integrale.png" alt="EnergyLab" class="me-3" style="width:60px; height:60px; object-fit:contain;">
+
+      <div>
+        <h5 class="mb-1">2025 – Assistant Ingénieur Management de l'Energie</h5>
+        <p class="mb-0">Travaux de recherche sur l’optimisation de l'autoconsommation des microgrid DC </p>
+      </div>
+    </div>
+    <div class="d-flex align-items-start mb-4">
+      <img src="images/energylab.png" alt="EnergyLab" class="me-3" style="width:60px; height:60px; object-fit:contain;">
+
+      <div>
+        <h5 class="mb-1">2025 – Stage EnergyLab | Ingénieur de Recherche</h5>
+        <p class="mb-0">Étude et développement d’un banc d’expérimentation en courant continu pour l’intégration de systèmes de climatisation dans une architecture de microgrid DC.</p>
+      </div>
+    </div>
+
+    <!-- Experience 2 -->
+    <div class="d-flex align-items-start mb-4">
+      <img src="images/tozzigreen.png" alt="TozziGreen" class="me-3" style="width:60px; height:60px; object-fit:contain;">
+
+      <div>
+        <h5 class="mb-1">2023 – Stage TozziGreen | Ingénieur O&M</h5>
+        <p class="mb-1"><strong>Missions :</strong></p>
+        <ul class="mb-1">
+          <li>Suivi de la production des centrales hydroélectriques</li>
+          <li>Suivi des pièces de rechange pour la maintenance des centrales</li>
+        </ul>
+        <p class="mb-0"><strong>Compétences développées :</strong>  Analyse de données, O&M</p>
+      </div>
+    </div>
+
+    <!-- Experience 3 -->
+    <div class="d-flex align-items-start mb-4">
+      <img src="images/JJS.jpg" alt="JSS Foundation" class="me-3" style="width:60px; height:60px; object-fit:contain;">
+
+      <div>
+        <h5 class="mb-1">2024 – Fellowship JJS Foundation</h5>
+        <p class="mb-0">
+          Etude de l'amélioration des architectures d’approvisionnement en eau de l’Université d’Antananarivo.
+          Analyse technique / Traducteur Anglais-Malagasy.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Projets -->
+<section id="projects" class="p-5">
+  <div class="container">
+    <h2 class="mb-5 text-center"><span id="carousel-counter">Projet - / 3</span></h2>
+
+    <div id="ProjectCarousel" class="carousel slide" data-bs-ride="false">
+
+
+
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row g-4">
+
+            <!-- Projet 1 -->
+            <div class="col-md-4">
+              <div class="card shadow h-100">
+                <img src="images/LSTM.png" class="card-img-top" alt="Power Flow Project">
+                <div class="card-body">
+                  <h5 class="card-title">Prédiction de charge et optimisation réseau IEEE.</h5>
+                  <p class="card-text">Utilisation des réseaux de neurones LSTM afin de prédire la charge compte tenue de l'évolution de la charge du jour précédent, de l'heure et du jour permettant une meilleure plannification du réseaux</p>
+                  <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#project1">
+                    Voir détails
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Projet 2 -->
+            <div class="col-md-4">
+              <div class="card shadow h-100">
+                <img src="images/Haitao.jpg" class="card-img-top" alt="SCARA Robot">
+                <div class="card-body">
+                  <h5 class="card-title">SCARA Robot + Vision</h5>
+                  <p class="card-text">Robot SCARA parallèle from scratch avec computer vision pour application Pick and Place.</p>
+                  <p> Vainqueur du "Most Unusual project using arduino- Tech Master Event 2023"<p>
+                  <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#project3">
+                    Voir détails
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Projet 3 -->
+            <div class="col-md-4">
+              <div class="card shadow h-100">
+                <img src="images/Tokamaso.jpg" class="card-img-top" alt="Microgrid Project">
+                <div class="card-body">
+                  <h5 class="card-title">Mini Rover Tokamaso</h5>
+                  <p class="card-text">Un Mini Rover muni d'une interface PyQt et d'une vision assistée par ordinateur. Il est capable de suivre les humains, de s'arrêter aux feux rouges et de détecter des marqueurs spécifiques.</p>
+                  <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#project2">
+                    Voir détails
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row g-4">
+
+            <div class="col-md-4">
+              <div class="card shadow h-100">
+                <img src="images/Rastonia.jpg" class="card-img-top" alt="Comptage">
+                <img src="images/Rastonia2.jpg" class="card-img-top" alt="Comptage">
+                <div class="card-body">
+                  <h5 class="card-title">Comptage automatisé</h5>
+                  <p class="card-text">Comptage automatisé d'echatillon d'une boite de petrie</p>
+                  <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#project4">
+                    Voir détails
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card shadow h-100">
+                <img src="images/happy.jpg" class="card-img-top" alt="Detection d'émotion">
+                <div class="card-body">
+                  <h5 class="card-title">Affichage imitation de l'émotion</h5>
+                  <p class="card-text">je détecte l'émotion sur le visage à l'aide de la computer vision, l'utilisation de modèle préantrainer pour visualiser les landmarks et l'ajout de modèle d'apprentissage pour détecter les émotions</p>
+                  <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#project5">
+                    Voir détails
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card shadow h-100">
+                <img src="images/handgesture.png" class="card-img-top" alt="SCARA Robot">
+                <div class="card-body">
+                  <h5 class="card-title">Classification gestuelle</h5>
+                  <p class="card-text">Je détecte les landmarks sur les mains qui m'aide à obtenir les datas pour entrainer un modèle de classification des geste de la main, Rajout d'interface graphique pour faciliter le process</p>
+                  <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#project6">
+                    Voir détails
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="row g-4">
+
+            <div class="col-md-4">
+              <div class="card shadow h-100">
+                <img src="images/QPC2.jpg" class="card-img-top" alt="QP1C">
+                <div class="card-body">
+                  <h5 class="card-title">Module question pour un champion pour sensibilisation des jeunes</h5>
+                  <p class="card-text">Création et programmation des modules pour intéragir avec les joueurs d'un jeu inspiré question pour un champion</p>
+                  <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#project8">
+                    Voir détails
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card shadow h-100">
+                <img src="images/licence.png" class="card-img-top" alt="Licence">
+                <div class="card-body">
+                  <h5 class="card-title">Robot Cartésien 2 axes</h5>
+                  <p class="card-text">Mon projet de licence qui m'a initier sur la conception électronique, la robotique et la programmation de microcontrolleur</p>
+                  <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#project7">
+                    Voir détails
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#ProjectCarousel" data-bs-slide="prev">
+
+        <span class="carousel-control-prev-icon bg-dark rounded"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#ProjectCarousel" data-bs-slide="next">
+
+        <span class="carousel-control-next-icon bg-dark rounded"></span>
+      </button>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Compétences & Passions en 2 colonnes -->
+<section class="p-5 bg-light">
+  <div class="container">
+    <div class="row">
+
+      <!-- Colonne Compétences -->
+      <div class="col-md-6">
+        <h2 class="mb-4">Compétences Techniques</h2>
+
+        <!-- Python -->
+        <div class="mb-3">
+          <h5>Python</h5>
+          <span class="badge bg-primary">SciPy</span>
+          <span class="badge bg-primary">Matplotlib</span>
+          <span class="badge bg-primary">Pandas</span>
+          <span class="badge bg-primary">OpenCV (cv2)</span>
+          <span class="badge bg-primary">Mediapipe</span>
+          <span class="badge bg-primary">NumPy</span>
+          <span class="badge bg-primary">PyQt</span>
+
+        </div>
+
+        <!-- Optimisation -->
+        <div class="mb-3">
+          <h5>Optimisation</h5>
+          <span class="badge bg-success">MILP</span>
+          <span class="badge bg-success">LP</span>
+          <span class="badge bg-success">scipy.optimize</span>
+        </div>
+
+        <!-- Micro-réseaux DC -->
+        <div class="mb-3">
+          <h5>Micro-réseaux DC</h5>
+          <span class="badge bg-warning text-dark">Architecture 400V DC</span>
+          <span class="badge bg-warning text-dark">EMS</span>
+          <span class="badge bg-warning text-dark">Modelisation</span>
+          <span class="badge bg-warning text-dark">Electronique de puissance</span>
+        </div>
+
+        <!-- Photovoltaïque -->
+        <div class="mb-3">
+          <h5>Photovoltaïque</h5>
+          <span class="badge bg-info text-dark">Dimensionnement</span>
+          <span class="badge bg-info text-dark">PV-Syst</span>
+          <span class="badge bg-info text-dark">Analyse de production</span>
+          <span class="badge bg-info text-dark">Modelisation</span>
+        </div>
+
+        <!-- IA -->
+        <div class="mb-3">
+          <h5>IA </h5>
+          <span class="badge bg-dark">ANN</span>
+          <span class="badge bg-dark">KNN</span>
+          <span class="badge bg-dark">LSTM</span>
+          <span class="badge bg-dark">Time Series Analysis</span>
+        </div>
+
+        <!-- Arduino -->
+        <div class="mb-3">
+          <h5>Robotique - Computer vision</h5>
+          <span class="badge bg-secondary">Direct and inverse Kinematics</span>
+          <span class="badge bg-secondary">Modelisation 3D</span>
+          <span class="badge bg-secondary">PyQT</span>
+          <span class="badge bg-secondary">C++</span>
+          <span class="badge bg-secondary"> Raspiberry, Arduino, Espressif</span>
+          <span class="badge bg-secondary">Yolo, Aruco, Image processing,</span>
+        </div>
+
+      </div>
+
+      <!-- Colonne Passions -->
+      <div class="col-md-6">
+  <h2 class="mb-4 text-center">Passions</h2>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item d-flex align-items-center">
+      <img src="images/Robot.jpg" alt="Robotique" style="height:100px; margin-right:20px;">
+      <span class="flex-grow-1 text-center">Robotique & systèmes embarqués</span>
+    </li>
+    <li class="list-group-item d-flex align-items-center">
+      <img src="images/Basket.jpg" alt="Basketball" style="height:100px; margin-right:20px;">
+      <span class="flex-grow-1 text-center">Basketball</span>
+    </li>
+    <li class="list-group-item d-flex align-items-center">
+      <img src="images/Boky.jpg" alt="Lecture" style="height:100px; margin-right:20px;">
+      <span class="flex-grow-1 text-center">Lecture</span>
+    </li>
+    <li class="list-group-item d-flex align-items-center">
+      <img src="images/Jeunes.jpg" alt="Encadrement" style="height:100px; margin-right:20px;">
+      <span class="flex-grow-1 text-center">Encadrement des jeunes</span>
+    </li>
+  </ul>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Expériences Associatives -->
+<section class="bg-light p-5">
+  <div class="container">
+    <h2 class="mb-5 text-center">Expériences Associatives</h2>
+
+    <div class="row g-4">
+
+      <!-- Colonne 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow text-center border-0">
+          <img src="images/president.jpg" class="card-img-top p-4" style="height:300px; object-fit:contain;" alt="Président association">
+          <div class="card-body">
+            <h5 class="card-title">Président d’association étudiante EESU- Electrical Engineering Students Unity</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Colonne 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow text-center border-0">
+          <img src="images/EESU.jpg" class="card-img-top p-4" style="height:300px; object-fit:contain;" alt="Organisation événement">
+          <div class="card-body">
+            <h5 class="card-title">Organisateur d’événements scientifiques et techniques</h5>
+            <p> Zoom sur le métier d'ingénieur Industriel II - Semaine du Génie Electrique 2023 </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Colonne 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow text-center border-0">
+          <img src="images/volontariat.jpg" class="card-img-top p-4" style="height:300px; object-fit:contain;" alt="Bénévolat formation jeunes">
+          <div class="card-body">
+            <h5 class="card-title">Bénévolat pour l’accompagnement et la formation des jeunes</h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Contact -->
+<section class="bg-light p-5 text-center">
+  <div class="container">
+    <h2>Contact</h2>
+    <p>Email : vicktoky@gmail.com</p>
+    <p>tel : 0693 52 97 86</p>
+    <p>
+      <a href="https://linkedin.com" class="btn btn-primary">LinkedIn</a>
+      <a href="https://github.com" class="btn btn-dark">GitHub</a>
+    </p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-3">
+  © 2026 RANDRIANARISOLO Tokiniaina Victoriot - Portfolio
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const carousel = document.querySelector('#ProjectCarousel');
+  const items = carousel.querySelectorAll('.carousel-item');
+  const counter = document.getElementById('carousel-counter');
+
+  const total = items.length;
+
+  carousel.addEventListener('slid.bs.carousel', function (event) {
+    const index = event.to + 1;
+    counter.textContent = "Projet " + index + " / " + total;
+  });
+
+  const carousel_form = document.querySelector('#formationCarousel');
+  const items_form = carousel_form.querySelectorAll('.carousel-item');
+  const counter_form = document.getElementById('carousel-counter-formation');
+
+  const total_form = items_form.length;
+
+  carousel_form.addEventListener('slid.bs.carousel', function (event) {
+    const index = event.to + 1;
+    counter_form.textContent = "Formation " + index + " / " + total;
+  });
+</script>
+</body>
+</html>
